@@ -1,19 +1,116 @@
-header {
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Ysabeau+SC:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color:#F1DBD3
+}
+
+/*.cabecalho {
+    display: flex;
+    justify-content: center;
+    background-color:#736965;
+
+}*/
+.cabecalho {
+    background-color:#736965;
+    display: flex;
+    justify-content: space-between; /* Coloca a imagem à esquerda e o título à direita */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+.cabecalho img {
+    max-width: 100px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+  }
+
+.cabecalho-titulo {
+    color: #F1DBD3;
+}
+  
+.cabecalho h1 {
+    background-color:#736965;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    flex-grow: 1; /* Expande o espaço disponível para o título, empurrando-o para o centro */
+  }
+  
+.cabecalho-dois {
+    /*padding: 20px;*/
+    display: flex;
+    justify-content: space-around;
+    background-color:#736965;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteudo-imagem {
+    text-align: center; /* Centraliza horizontalmente */
+    height: 450px; /* Ajuste a altura conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-imagem img {
+    display: block; /* Impede margens brancas indesejadas ao redor da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+}
+
+main {
+    margin-top: 70px; /* Ajuste o valor conforme necessário para controlar o espaço desejado */
+}
+
+/* Estilos para a imagem */
+.primeiro-conteudo {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.segundo-conteudo-destaque{
     margin-top: 50px;
-    margin-right: 30px;
-    margin-bottom: 0px;
-    margin-left: 30px;
-    background-color: rgb(193, 199, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
 
-    .Titulo {
-            color:hotpink;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            }
-    .Subtitulo {
-            color:rgb(0, 0, 0);
-            margin-top: 0px;
-            margin-bottom: 0px;
-               }
+.segundo-conteudo {
+    margin-top: 50px;
+    text-align: center; /* Centralizar as imagens horizontalmente */
+}
 
+.segundo-conteudo img {
+    width: 300px; /* Largura das imagens */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    margin: 10px; /* Espaçamento entre as imagens */
+    /*border: 2px solid #ccc; /* Borda para destacar as imagens */
+
+}
+
+.cabecalho-frase {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-produtos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.rodape {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
 }
